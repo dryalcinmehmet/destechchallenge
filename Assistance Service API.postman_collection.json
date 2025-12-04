@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "4e17c5be-ba8a-43f0-9fee-f9f5258ce2fa",
+		"name": "Assistance Service API",
+		"description": "Assistance Request / Provider Assignment Backend Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6639955"
+	},
+	"item": [
+		{
+			"name": "Create Assistance Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customer_name\": \"Mehmet Yalçın\",\n    \"policy_number\": \"POL12345\",\n    \"lat\": 41.015137,\n    \"lon\": 28.979530,\n    \"issue_desc\": \"Çekici lazım\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/request/create/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"request",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complete Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}/assistance/request/{{REQUEST_ID}}/complete/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"assistance",
+						"request",
+						"{{REQUEST_ID}}",
+						"complete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL}}/assistance/request/{{REQUEST_ID}}/cancel/",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"assistance",
+						"request",
+						"{{REQUEST_ID}}",
+						"cancel",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8000"
+		},
+		{
+			"key": "REQUEST_ID",
+			"value": "1"
+		}
+	]
+}
