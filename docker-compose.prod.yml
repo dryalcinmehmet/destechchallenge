@@ -1,0 +1,124 @@
+version: '3.8'
+
+services:
+  web:
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 4
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/mediafiles
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.prod
+    depends_on:
+      - db
+      - redis
+    networks:
+      - common_network
+
+  celery:
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    entrypoint: []
+    command: celery -A config worker --loglevel=INFO
+    volumes:
+      - static_volume:/app/staticfiles
+    env_file:
+      - ./.env.prod
+    depends_on:
+      - web
+      - redis
+    networks:
+      - common_network
+
+  celery_beat:
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    entrypoint: []
+    command: celery -A config beat --loglevel=INFO
+    env_file:
+      - ./.env.prod
+    depends_on:
+      - web
+      - redis
+    networks:
+      - common_network
+
+  flower:
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    entrypoint: []
+    command: >
+      celery -A config flower
+      --broker=redis://redis:6379/0
+      --address=0.0.0.0
+      --port=5555
+    ports:
+      - 5555:5555
+    depends_on:
+      - redis
+      - celery
+    env_file:
+      - ./.env.prod
+    networks:
+      - common_network
+
+  db:
+    image: postgres:13.0-alpine
+    restart: always
+    volumes:
+      - postgres_data_production:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.prod.db
+    ports:
+      - 5432:5432
+    networks:
+      - common_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  nginx:
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - web
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/mediafiles
+    networks:
+      - common_network
+
+  redis:
+    restart: unless-stopped
+    image: redis:7.0.5-alpine
+    ports:
+      - 6379:6379
+    networks:
+      - common_network
+
+volumes:
+  postgres_data_production:
+  static_volume:
+  media_volume:
+
+networks:
+  common_network:
+    external:
+      name: custom_net
