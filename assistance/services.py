@@ -128,6 +128,24 @@ class AssistanceService:
         req.save()
 
     @classmethod
+    @transaction.atomic
     def cancel_request(cls, request_id: int):
-        """TODO: Talebi iptal et"""
-        raise NotImplementedError()
+        """
+        - Bu kısımda da complete_request ile aynı methodlar kullanılmıştır. (bütün kod transaction atomic ile çalıştırılır.)
+        """
+        # Request db locked ile çekilir.
+        req = AssistanceRequest.objects.select_for_update().get(id=request_id)
+
+        # Completed olan bir request iptal edilemez.
+        if req.status == "COMPLETED":
+            raise Exception("Tamamlanmış requestler iptal edilemez.")
+
+        # Eğer provider atanmışsa provider tekrar müsait hale getirilmelidir
+        if req.status == "DISPATCHED":
+            provider = req.assignment.provider
+            provider.is_available = True
+            provider.save()
+
+        # Request durumu cancel edilir..
+        req.status = "CANCELLED"
+        req.save()
