@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Provider, AssistanceRequest, ServiceAssignment
+
+from .models import AssistanceRequest, Provider, ServiceAssignment
 
 
 @admin.register(Provider)
@@ -12,7 +13,15 @@ class ProviderAdmin(admin.ModelAdmin):
 
 @admin.register(AssistanceRequest)
 class AssistanceRequestAdmin(admin.ModelAdmin):
-    list_display = ("id", "customer_name", "policy_number", "status", "lat", "lon", "created_at")
+    list_display = (
+        "id",
+        "customer_name",
+        "policy_number",
+        "status",
+        "lat",
+        "lon",
+        "created_at",
+    )
     list_filter = ("status", "created_at")
     search_fields = ("customer_name", "policy_number")
     ordering = ("-created_at",)

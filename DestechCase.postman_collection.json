@@ -1,0 +1,1067 @@
+{
+	"info": {
+		"_postman_id": "bc778a2f-5392-4ca1-9d21-04dab42c639c",
+		"name": "DestechCase",
+		"description": "DestechCase Management Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6639955"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "provider",
+					"item": [
+						{
+							"name": "create",
+							"item": [
+								{
+									"name": "Provider oluştur",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "sessionid",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"Çekici Mustafa\",\n  \"phone\": \"5551234567\",\n  \"lat\": 22.00,\n  \"lon\": 33.00\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/provider/create/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"provider",
+												"create",
+												""
+											]
+										},
+										"description": "Sisteme yeni bir provider ekler."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/provider/create/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"provider",
+														"create",
+														""
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": 8976.17925798076\n}"
+										},
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/provider/create/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"provider",
+														"create",
+														""
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": 8976.17925798076\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "list",
+							"item": [
+								{
+									"name": "Provider listesini getir",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "sessionid",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/provider/list/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"provider",
+												"list",
+												""
+											]
+										},
+										"description": "Sistemdeki tüm provider kayıtlarını döndürür."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/provider/list/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"provider",
+														"list",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": true\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "request",
+					"item": [
+						{
+							"name": "{request_id}",
+							"item": [
+								{
+									"name": "cancel",
+									"item": [
+										{
+											"name": "Assistance request'i iptal et",
+											"request": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "sessionid",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "{{apiKey}}",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/request/2/cancel/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"request",
+														"2",
+														"cancel",
+														""
+													]
+												},
+												"description": "Belirtilen assistance request'in durumunu CANCELLED yapar."
+											},
+											"response": [
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/cancel/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"cancel",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												},
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/cancel/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"cancel",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												},
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/cancel/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"cancel",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "Not Implemented",
+													"code": 501,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "complete",
+									"item": [
+										{
+											"name": "Assistance request'i tamamla",
+											"request": {
+												"auth": {
+													"type": "apikey",
+													"apikey": [
+														{
+															"key": "key",
+															"value": "sessionid",
+															"type": "string"
+														},
+														{
+															"key": "value",
+															"value": "{{apiKey}}",
+															"type": "string"
+														},
+														{
+															"key": "in",
+															"value": "header",
+															"type": "string"
+														}
+													]
+												},
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/request/1/complete/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"request",
+														"1",
+														"complete",
+														""
+													]
+												},
+												"description": "Belirtilen assistance request'in durumunu COMPLETED yapar."
+											},
+											"response": [
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/complete/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"complete",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												},
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/complete/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"complete",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												},
+												{
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															},
+															{
+																"key": "sessionid",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/request/:request_id/complete/",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"request",
+																":request_id",
+																"complete",
+																""
+															],
+															"variable": [
+																{
+																	"key": "request_id",
+																	"value": "9030"
+																}
+															]
+														}
+													},
+													"status": "Not Implemented",
+													"code": 501,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"key_0\": 8976.17925798076\n}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "create",
+							"item": [
+								{
+									"name": "Yeni assistance request oluştur",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "sessionid",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"customer_name\": \"Mehmet Yalçın\",\n    \"policy_number\": \"POL12345\",\n    \"lat\": 41.015137,\n    \"lon\": 28.979530,\n    \"issue_desc\": \"Çekici lazım\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/request/create/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"request",
+												"create",
+												""
+											]
+										},
+										"description": "Yeni bir assistance talebi oluşturur ve uygun provider'ı otomatik olarak atar."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/request/create/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"request",
+														"create",
+														""
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": 8976.17925798076\n}"
+										},
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/request/create/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"request",
+														"create",
+														""
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": 8976.17925798076\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "list",
+							"item": [
+								{
+									"name": "Assistance request listesini getir",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "sessionid",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "{{apiKey}}",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/request/list/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"request",
+												"list",
+												""
+											]
+										},
+										"description": "Tüm assistance request kayıtlarını döndürür."
+									},
+									"response": [
+										{
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"key": "sessionid",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/request/list/",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"request",
+														"list",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"key_0\": true\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "schema",
+					"item": [
+						{
+							"name": "schema retrieve",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "key",
+											"value": "sessionid",
+											"type": "string"
+										},
+										{
+											"key": "value",
+											"value": "{{apiKey}}",
+											"type": "string"
+										},
+										{
+											"key": "in",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.oai.openapi"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/schema/?format=yaml&lang=vi",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"schema",
+										""
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "yaml"
+										},
+										{
+											"key": "lang",
+											"value": "vi"
+										}
+									]
+								},
+								"description": "OpenApi3 schema for this API. Format can be selected via content negotiation.\n\n- YAML: application/vnd.oai.openapi\n- JSON: application/vnd.oai.openapi+json"
+							},
+							"response": [
+								{
+									"name": "Untitled Example",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/vnd.oai.openapi"
+											},
+											{
+												"key": "sessionid",
+												"value": "<API Key>",
+												"description": "Added as a part of security scheme: apikey"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/schema/?format=yaml&lang=vi",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"schema",
+												""
+											],
+											"query": [
+												{
+													"key": "format",
+													"value": "yaml"
+												},
+												{
+													"key": "lang",
+													"value": "vi"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"key_0\": 8976.17925798076\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
