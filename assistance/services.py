@@ -14,7 +14,6 @@ class AssistanceService:
     def create_request(cls, data: dict) -> AssistanceRequest:
         return AssistanceRequest.objects.create(**data)
 
-
     @classmethod
     def find_nearest_available_provider(cls, lat: float, lon: float) -> Provider:
         """
@@ -30,21 +29,16 @@ class AssistanceService:
         def distance(provider: Provider) -> float:
             """
             Her provider için müşterinin konumu ile provider'n konumu
-            arasındaki gerçek km cinsinden uzaklığı hesaplar. Ayrı bir class olarak 
+            arasındaki gerçek km cinsinden uzaklığı hesaplar. Ayrı bir class olarak
             yazılmıştır. Solid prensiplere daha uygundur.
             """
             d = NearestDistance(
-                lat1=lat,
-                lon1=lon,
-                lat2=provider.lat,
-                lon2=provider.lon
+                lat1=lat, lon1=lon, lat2=provider.lat, lon2=provider.lon
             )
-            return d.haversine_distance()
+            return round(d.haversine_distance(), 2)
 
-        
         # En küçük mesafeye sahip provider'ı seçiyoruz.
         return min(providers, key=distance)
-    
 
     @classmethod
     def assign_provider_atomic(cls, request_id: int, provider_id: int = None):
