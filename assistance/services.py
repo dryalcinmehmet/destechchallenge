@@ -95,9 +95,37 @@ class AssistanceService:
         return assignment
 
     @classmethod
+    @transaction.atomic
     def complete_request(cls, request_id: int):
-        """TODO: Talebi tamamla"""
-        raise NotImplementedError()
+        """
+        - Burada da transaction atomic kullanıldı faakat decoratör olarak kullanıldı.
+          İki farklı yöntemde işe yarar. Çünkü bütün fonksiyon transaction edilmeli.
+          Parça bir kısım edilseydi with() methodu daha iyi bir çözüm olurdu.
+        - Bir talep sadece DISPATCHED durumundeyken tamamlanabilir. Çünkü henüz provider
+          atanmadıysaa tamamlanacak bir işlem yoktur.
+        - Ayrıca veritabanı tutarlılını sağlamak için request kaydını
+          select_for_update() ile kilitliyoruz başka bir işlem aynı anda bunu değiştiremesin diye.
+        """
+        # Talebi kilitleyerek çekiyoruz.
+        req = AssistanceRequest.objects.select_for_update().get(id=request_id)
+
+        # Yanlış akışı engellemek için durum kontrolü
+        if req.status != "DISPATCHED":
+            raise Exception(
+                "Yalnızca 'DISPATCHED' durumundaki talepler tamamlanabilir."
+            )
+
+        # Talep DISPATCHED olduğu için ona atanmış bir provider kesin vardır
+        assignment = req.assignment
+        provider = assignment.provider
+
+        # Provider tekrar müsaite hale getirilir..
+        provider.is_available = True
+        provider.save()
+
+        # Talep completed olarak işaretlenir
+        req.status = "COMPLETED"
+        req.save()
 
     @classmethod
     def cancel_request(cls, request_id: int):
