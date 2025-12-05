@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from assistance.models import Provider
+from assistance.models import AssistanceRequest, Provider, ServiceAssignment
 
 from .services import AssistanceService
 
@@ -45,6 +45,16 @@ class ProviderListView(APIView):
     def get(self, request):
         providers = Provider.objects.all().values()
         return Response(list(providers), status=status.HTTP_200_OK)
+
+
+class AssistanceRequestListView(APIView):
+    """
+    Assistance requestlerini listelemek için kullanıcak GET endpoint.
+    """
+
+    def get(self, request):
+        requests = AssistanceRequest.objects.all().values()
+        return Response(list(requests), status=status.HTTP_200_OK)
 
 
 class AssistanceRequestCreateView(APIView):
