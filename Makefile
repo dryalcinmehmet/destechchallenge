@@ -59,9 +59,9 @@ help:
 	@echo "  ${YELLOW}| 	--> For bump version.${YELLOW}"
 	@echo "  |  >> ${GREEN}make release${GREEN}"
 	@echo ""
-	@echo "  ${PURPLE}|${PURPLE} install:  $(POUND)$(POUND) help for install"
-	@echo "  ${YELLOW}| 	--> For necessary ubuntu packages installing.${YELLOW}"
-	@echo "  ${RED}|  >>${RED} ${GREEN}make install${GREEN}"
+	@echo "  ${PURPLE}|${PURPLE} docker-compose-install:  $(POUND)$(POUND) help for install"
+	@echo "  ${YELLOW}| 	--> For necessary docker-compose installing.${YELLOW}"
+	@echo "  ${RED}|  >>${RED} ${GREEN}make docker-compose-install${GREEN}"
 	@echo "${PURPLE}-----------------------------------------------------------------------------------------------------------------${RESET}"
 	@grep -E '^[a-zA-Z_0-9%-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "${TARGET_COLOR}%-30s${RESET} ${PURPLE}%s\n${PURPLE}${RESET}", $$1, $$2}'
 	@echo "${PURPLE}-----------------------------------------------------------------------------------------------------------------${RESET}"
