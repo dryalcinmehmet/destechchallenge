@@ -74,7 +74,7 @@ services:
       - common_network
 
   db:
-    image: postgres:13.0-alpine
+    image: postgres:14.0-alpine
     restart: always
     volumes:
       - postgres_data_production:/var/lib/postgresql/data/

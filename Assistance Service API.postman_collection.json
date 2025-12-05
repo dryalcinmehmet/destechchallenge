@@ -47,14 +47,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{BASE_URL}}/assistance/request/{{REQUEST_ID}}/complete/",
+					"raw": "{{BASE_URL}}/api/request/2/complete/",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
-						"assistance",
+						"api",
 						"request",
-						"{{REQUEST_ID}}",
+						"2",
 						"complete",
 						""
 					]
@@ -73,14 +73,14 @@
 					}
 				],
 				"url": {
-					"raw": "{{BASE_URL}}/assistance/request/{{REQUEST_ID}}/cancel/",
+					"raw": "{{BASE_URL}}/api/request/3/cancel/",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
-						"assistance",
+						"api",
 						"request",
-						"{{REQUEST_ID}}",
+						"3",
 						"cancel",
 						""
 					]
