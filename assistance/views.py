@@ -1,10 +1,9 @@
+from drf_spectacular.utils import OpenApiExample, extend_schema
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from assistance.models import AssistanceRequest, Provider, ServiceAssignment
-
-from drf_spectacular.utils import extend_schema, OpenApiExample
 
 from .services import AssistanceService
 
