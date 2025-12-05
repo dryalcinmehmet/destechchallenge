@@ -1,12 +1,13 @@
 from django.urls import path
 
 from .views import (AssistanceRequestCancelView, AssistanceRequestCompleteView,
-                    AssistanceRequestCreateView, ProviderCreateView,
-                    ProviderListView)
+                    AssistanceRequestCreateView, AssistanceRequestListView,
+                    ProviderCreateView, ProviderListView)
 
 urlpatterns = [
     path("provider/create/", ProviderCreateView.as_view(), name="provider_create"),
     path("provider/list/", ProviderListView.as_view(), name="provider_list"),
+    path("request/list/", AssistanceRequestListView.as_view(), name="request_list"),
     path(
         "request/create/", AssistanceRequestCreateView.as_view(), name="request_create"
     ),
