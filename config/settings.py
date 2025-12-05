@@ -20,6 +20,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "drf_spectacular",
+    "drf_spectacular_sidecar",
+    "django_filters",
     "assistance",
 ]
 
@@ -50,6 +53,26 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    "DEFAULT_FILTER_BACKENDS": [
+        "rest_framework.filters.OrderingFilter",
+        "django_filters.rest_framework.DjangoFilterBackend",
+    ],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE": 24,
+    "TEST_REQUEST_DEFAULT_FORMAT": "json",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": os.environ.get("API_TITLE"),
+    "DESCRIPTION": os.environ.get("API_DESCRIPTION"),
+    "VERSION": os.environ.get("API_VERSION"),
+    "SERVE_PUBLIC": os.environ.get("SERVE_PUBLIC"),
+    "COMPONENT_NO_READ_ONLY_REQUIRED": True,
+}
+
 
 WSGI_APPLICATION = "config.wsgi.application"
 
