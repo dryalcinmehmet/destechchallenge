@@ -8,3 +8,6 @@ Open API Swagger Screen
 
 Flower
 http://localhost:5555
+
+OpenAPI Swagger
+http://localhost:8000/api/docs/swagger
