@@ -1,0 +1,176 @@
+{
+    "annotations": {
+      "list": []
+    },
+    "editable": true,
+    "title": "Destech - Uygulama İzleme Dashboard PRODUCTION",
+    "timezone": "browser",
+    "schemaVersion": 36,
+    "version": 7,
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Toplam HTTP İstek Sayısı",
+        "targets": [
+          { "expr": "django_http_requests_before_middlewares_total", "refId": "A" }
+        ],
+        "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "type": "stat",
+        "title": "Toplam HTTP Response Sayısı",
+        "targets": [
+          { "expr": "django_http_responses_before_middlewares_total", "refId": "A" }
+        ],
+        "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 }
+      },
+  
+      {
+        "type": "timeseries",
+        "title": "Ortalama Request Yanıt Süresi (ms)",
+        "targets": [
+          {
+            "expr": "1000 * (django_http_requests_latency_including_middlewares_seconds_sum / django_http_requests_latency_including_middlewares_seconds_count)",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 4, "w": 12, "h": 6 }
+      },
+  
+      {
+        "type": "heatmap",
+        "title": "Request Latency Histogramı",
+        "targets": [
+          { "expr": "django_http_requests_latency_including_middlewares_seconds_bucket", "refId": "A" }
+        ],
+        "gridPos": { "x": 0, "y": 10, "w": 12, "h": 6 }
+      },
+  
+      {
+        "type": "stat",
+        "title": "Celery Gönderilen Task Sayısı",
+        "targets": [
+          { "expr": "sum(celery_task_sent_total)", "refId": "A" }
+        ],
+        "gridPos": { "x": 0, "y": 16, "w": 6, "h": 4 }
+      },
+      {
+        "type": "stat",
+        "title": "Celery Çalıştırılan Task Sayısı",
+        "targets": [
+          { "expr": "sum(celery_task_received_total)", "refId": "A" }
+        ],
+        "gridPos": { "x": 6, "y": 16, "w": 6, "h": 4 }
+      },
+  
+      {
+        "type": "timeseries",
+        "title": "Celery Success / Failed Trend",
+        "targets": [
+          { "expr": "sum(celery_task_succeeded_total)", "refId": "A" },
+          { "expr": "sum(celery_task_failed_total)", "refId": "B" }
+        ],
+        "gridPos": { "x": 0, "y": 20, "w": 12, "h": 6 }
+      },
+  
+      {
+        "type": "stat",
+        "title": "Redis Bağlantı Sayısı",
+        "targets": [
+          { "expr": "redis_connected_clients", "refId": "A" }
+        ],
+        "gridPos": { "x": 0, "y": 26, "w": 6, "h": 4 }
+      },
+  
+      {
+        "type": "stat",
+        "title": "PostgreSQL Aktif Bağlantılar",
+        "targets": [
+          { "expr": "pg_stat_activity_count{state=\"active\"}", "refId": "A" }
+        ],
+        "gridPos": { "x": 6, "y": 26, "w": 6, "h": 4 }
+      },
+  
+  
+      {
+        "type": "timeseries",
+        "title": "PostgreSQL INSERT Sayısı",
+        "targets": [
+          {
+            "expr": "pg_stat_database_tup_inserted{datname=\"production\"}",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 30, "w": 6, "h": 5 }
+      },
+  
+      {
+        "type": "timeseries",
+        "title": "PostgreSQL UPDATE Sayısı",
+        "targets": [
+          {
+            "expr": "pg_stat_database_tup_updated{datname=\"production\"}",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 6, "y": 30, "w": 6, "h": 5 }
+      },
+  
+      {
+        "type": "timeseries",
+        "title": "PostgreSQL DELETE Sayısı",
+        "targets": [
+          {
+            "expr": "pg_stat_database_tup_deleted{datname=\"production\"}",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 35, "w": 6, "h": 5 }
+      },
+  
+      {
+        "type": "timeseries",
+        "title": "PostgreSQL Return / Fetch Trend",
+        "targets": [
+          {
+            "expr": "pg_stat_database_tup_returned{datname=\"production\"}",
+            "refId": "A"
+          },
+          {
+            "expr": "pg_stat_database_tup_fetched{datname=\"production\"}",
+            "refId": "B"
+          }
+        ],
+        "gridPos": { "x": 6, "y": 35, "w": 6, "h": 5 }
+      },
+  
+      {
+        "type": "table",
+        "title": "PostgreSQL CRUD Özeti",
+        "targets": [
+          {
+            "expr": "pg_stat_database_tup_inserted{datname=\"production\"}",
+            "refId": "A"
+          },
+          {
+            "expr": "pg_stat_database_tup_updated{datname=\"production\"}",
+            "refId": "B"
+          },
+          {
+            "expr": "pg_stat_database_tup_deleted{datname=\"production\"}",
+            "refId": "C"
+          },
+          {
+            "expr": "pg_stat_database_tup_returned{datname=\"production\"}",
+            "refId": "D"
+          },
+          {
+            "expr": "pg_stat_database_tup_fetched{datname=\"production\"}",
+            "refId": "E"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 40, "w": 12, "h": 6 }
+      }
+    ]
+  }
+  
