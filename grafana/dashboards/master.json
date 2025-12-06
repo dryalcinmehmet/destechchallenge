@@ -6,16 +6,13 @@
   "title": "Destech - Uygulama İzleme Dashboard",
   "timezone": "browser",
   "schemaVersion": 36,
-  "version": 1,
+  "version": 7,
   "panels": [
     {
       "type": "stat",
       "title": "Toplam HTTP İstek Sayısı",
       "targets": [
-        {
-          "expr": "django_http_requests_before_middlewares_total",
-          "refId": "A"
-        }
+        { "expr": "django_http_requests_before_middlewares_total", "refId": "A" }
       ],
       "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 }
     },
@@ -23,155 +20,156 @@
       "type": "stat",
       "title": "Toplam HTTP Response Sayısı",
       "targets": [
-        {
-          "expr": "django_http_responses_before_middlewares_total",
-          "refId": "A"
-        }
+        { "expr": "django_http_responses_before_middlewares_total", "refId": "A" }
       ],
       "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 }
     },
+
     {
       "type": "timeseries",
       "title": "Ortalama Request Yanıt Süresi (ms)",
       "targets": [
         {
-          "expr": "django_http_requests_latency_including_middlewares_seconds_sum / django_http_requests_latency_including_middlewares_seconds_count",
+          "expr": "1000 * (django_http_requests_latency_including_middlewares_seconds_sum / django_http_requests_latency_including_middlewares_seconds_count)",
           "refId": "A"
         }
       ],
       "gridPos": { "x": 0, "y": 4, "w": 12, "h": 6 }
     },
+
     {
       "type": "heatmap",
-      "title": "HTTP Request Latency Histogramı",
+      "title": "Request Latency Histogramı",
       "targets": [
-        {
-          "expr": "django_http_requests_latency_including_middlewares_seconds_bucket",
-          "refId": "A"
-        }
+        { "expr": "django_http_requests_latency_including_middlewares_seconds_bucket", "refId": "A" }
       ],
       "gridPos": { "x": 0, "y": 10, "w": 12, "h": 6 }
     },
+
     {
       "type": "stat",
-      "title": "Celery Failed Task Sayısı",
+      "title": "Celery Gönderilen Task Sayısı",
       "targets": [
-        {
-          "expr": "sum(celery_task_sent_total)",
-          "refId": "A"
-        }
+        { "expr": "sum(celery_task_sent_total)", "refId": "A" }
       ],
       "gridPos": { "x": 0, "y": 16, "w": 6, "h": 4 }
     },
     {
       "type": "stat",
-      "title": "Celery Başarılı Task Sayısı",
+      "title": "Celery Çalıştırılan Task Sayısı",
       "targets": [
-        {
-          "expr": "sum(celery_task_received_total)",
-          "refId": "A"
-        }
+        { "expr": "sum(celery_task_received_total)", "refId": "A" }
       ],
       "gridPos": { "x": 6, "y": 16, "w": 6, "h": 4 }
     },
+
     {
       "type": "timeseries",
-      "title": "Celery Task Başarı / Hata Grafiği",
+      "title": "Celery Success / Failed Trend",
       "targets": [
-        {
-          "expr": "sum(celery_task_succeeded_total)",
-          "refId": "A",
-          "legendFormat": "Başarılı"
-        },
-        {
-          "expr": "sum(celery_task_failed_total)",
-          "refId": "B",
-          "legendFormat": "Hatalı"
-        }
+        { "expr": "sum(celery_task_succeeded_total)", "refId": "A" },
+        { "expr": "sum(celery_task_failed_total)", "refId": "B" }
       ],
       "gridPos": { "x": 0, "y": 20, "w": 12, "h": 6 }
     },
+
     {
       "type": "stat",
       "title": "Redis Bağlantı Sayısı",
       "targets": [
-        {
-          "expr": "redis_connected_clients",
-          "refId": "A"
-        }
+        { "expr": "redis_connected_clients", "refId": "A" }
       ],
       "gridPos": { "x": 0, "y": 26, "w": 6, "h": 4 }
     },
+
     {
       "type": "stat",
       "title": "PostgreSQL Aktif Bağlantılar",
       "targets": [
-        {
-          "expr": "pg_stat_activity_count",
-          "refId": "A"
-        }
+        { "expr": "pg_stat_activity_count{state=\"active\"}", "refId": "A" }
       ],
       "gridPos": { "x": 6, "y": 26, "w": 6, "h": 4 }
     },
 
+
     {
       "type": "timeseries",
-      "title": "PostgreSQL INSERT İşlemleri",
+      "title": "PostgreSQL INSERT Sayısı",
       "targets": [
         {
-          "expr": "pg_stat_user_tables_n_tup_ins",
+          "expr": "pg_stat_database_tup_inserted{datname=\"staging\"}",
           "refId": "A"
         }
       ],
-      "gridPos": { "x": 0, "y": 30, "w": 12, "h": 6 }
+      "gridPos": { "x": 0, "y": 30, "w": 6, "h": 5 }
     },
+
     {
       "type": "timeseries",
-      "title": "PostgreSQL UPDATE İşlemleri",
+      "title": "PostgreSQL UPDATE Sayısı",
       "targets": [
         {
-          "expr": "pg_stat_user_tables_n_tup_upd",
+          "expr": "pg_stat_database_tup_updated{datname=\"staging\"}",
           "refId": "A"
         }
       ],
-      "gridPos": { "x": 0, "y": 36, "w": 12, "h": 6 }
+      "gridPos": { "x": 6, "y": 30, "w": 6, "h": 5 }
     },
+
     {
       "type": "timeseries",
-      "title": "PostgreSQL DELETE İşlemleri",
+      "title": "PostgreSQL DELETE Sayısı",
       "targets": [
         {
-          "expr": "pg_stat_user_tables_n_tup_del",
+          "expr": "pg_stat_database_tup_deleted{datname=\"staging\"}",
           "refId": "A"
         }
       ],
-      "gridPos": { "x": 0, "y": 42, "w": 12, "h": 6 }
+      "gridPos": { "x": 0, "y": 35, "w": 6, "h": 5 }
     },
+
+    {
+      "type": "timeseries",
+      "title": "PostgreSQL Return / Fetch Trend",
+      "targets": [
+        {
+          "expr": "pg_stat_database_tup_returned{datname=\"staging\"}",
+          "refId": "A"
+        },
+        {
+          "expr": "pg_stat_database_tup_fetched{datname=\"staging\"}",
+          "refId": "B"
+        }
+      ],
+      "gridPos": { "x": 6, "y": 35, "w": 6, "h": 5 }
+    },
+
     {
       "type": "table",
-      "title": "PostgreSQL İşlem Özeti (Insert / Update / Delete)",
+      "title": "PostgreSQL CRUD Özeti",
       "targets": [
         {
-          "expr": "pg_stat_user_tables_n_tup_ins",
-          "format": "table",
-          "refId": "A",
-          "legendFormat": "Insert"
+          "expr": "pg_stat_database_tup_inserted{datname=\"staging\"}",
+          "refId": "A"
         },
         {
-          "expr": "pg_stat_user_tables_n_tup_upd",
-          "format": "table",
-          "refId": "B",
-          "legendFormat": "Update"
+          "expr": "pg_stat_database_tup_updated{datname=\"staging\"}",
+          "refId": "B"
         },
         {
-          "expr": "pg_stat_user_tables_n_tup_del",
-          "format": "table",
-          "refId": "C",
-          "legendFormat": "Delete"
+          "expr": "pg_stat_database_tup_deleted{datname=\"staging\"}",
+          "refId": "C"
+        },
+        {
+          "expr": "pg_stat_database_tup_returned{datname=\"staging\"}",
+          "refId": "D"
+        },
+        {
+          "expr": "pg_stat_database_tup_fetched{datname=\"staging\"}",
+          "refId": "E"
         }
       ],
-      "gridPos": { "x": 0, "y": 48, "w": 12, "h": 7 }
+      "gridPos": { "x": 0, "y": 40, "w": 12, "h": 6 }
     }
-
   ]
 }
