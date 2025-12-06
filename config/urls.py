@@ -5,6 +5,8 @@ from drf_spectacular.views import (SpectacularAPIView, SpectacularRedocView,
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", include("django_prometheus.urls")),
+    path("metrics/", include("django_prometheus.urls")),
     path("api/", include("assistance.urls")),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     # Swagger UI

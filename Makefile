@@ -86,7 +86,7 @@ get-version:  ## Get latest version
 .PHONY : down
 down:  ## Docker down
 	@echo "${PURPLE}Docker compose down!..."
-	docker-compose -f docker-compose..prod.yml down -v
+	docker-compose -f docker-compose.yml down -v
 	docker-compose -f docker-compose.prod.yml down -v	
 
 .PHONY : dev

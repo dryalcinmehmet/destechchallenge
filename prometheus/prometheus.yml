@@ -1,0 +1,20 @@
+global:
+  scrape_interval: 3s
+
+scrape_configs:
+
+  - job_name: "django"
+    static_configs:
+      - targets: ["web:8000"]
+
+  - job_name: "celery"
+    static_configs:
+      - targets: ["celery_exporter:9808"]
+
+  - job_name: "redis"
+    static_configs:
+      - targets: ["redis_exporter:9121"]
+
+  - job_name: "postgres"
+    static_configs:
+      - targets: ["postgres_exporter:9187"]

@@ -13,6 +13,7 @@ ALLOWED_HOSTS = ["*"]
 
 
 INSTALLED_APPS = [
+    "django_prometheus",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -27,6 +28,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -34,6 +36,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_prometheus.middleware.PrometheusAfterMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
@@ -106,3 +109,7 @@ CELERY_RESULT_SERIALIZER = "json"
 # For Prod
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 MEDIA_ROOT = os.path.join(BASE_DIR, "mediafiles")
+
+PROMETHEUS_EXPORT_MIDDLEWARE = "django_prometheus.middleware.PrometheusAfterMiddleware"
+PROMETHEUS_METRICS_EXPORT_PORT_RANGE = ""
+PROMETHEUS_EXPORTER = "django_prometheus.exports.ExporterURL"

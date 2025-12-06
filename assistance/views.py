@@ -74,14 +74,16 @@ class AssistanceRequestCreateView(APIView):
 
         if not serializer.is_valid():
             return Response(serializer.errors, status=400)
+        try:
+            assistance_req = AssistanceService.create_request(serializer.validated_data)
+            AssistanceService.assign_provider_atomic(assistance_req.id)
 
-        assistance_req = AssistanceService.create_request(serializer.validated_data)
-        AssistanceService.assign_provider_atomic(assistance_req.id)
-
-        return Response(
-            AssistanceRequestSerializer(assistance_req).data,
-            status=status.HTTP_201_CREATED,
-        )
+            return Response(
+                AssistanceRequestSerializer(assistance_req).data,
+                status=status.HTTP_201_CREATED,
+            )
+        except Exception as e:
+            return Response({"error": str(e)}, status=400)
 
 
 class AssistanceRequestCompleteView(APIView):

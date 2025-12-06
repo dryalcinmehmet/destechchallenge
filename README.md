@@ -5,7 +5,12 @@ Make Commands
 Open API Swagger Screen
 ![alt text](swagger.png)
 
+Grafana 
+http://localhost:3000/dashboards
+user: admin
+pass: admin
 
+![alt text](grafana.png)
 Flower
 http://localhost:5555
 
