@@ -1,0 +1,588 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="Page-1" id="fOPldgHgbpDAhseJ8M6F">
+    <mxGraphModel dx="7907" dy="4907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-1" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;labelBackgroundColor=#FFFFFF;strokeWidth=4;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="AWS Cloud" vertex="1">
+          <mxGeometry height="780" width="1420" x="8039.75" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;dashed=1;labelBackgroundColor=none;strokeWidth=3;fontSize=31;glass=1;sketch=0;fillColor=none;strokeColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="850" width="1524" x="7947.75" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-3" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;verticalAlign=top;align=left;spacingLeft=30;dashed=0;strokeWidth=3;fillColor=#f5f5f5;shadow=1;gradientColor=#b3b3b3;strokeColor=#666666;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="VPC" vertex="1">
+          <mxGeometry height="591.5" width="1221" x="8181.75" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-4" parent="F3EUuus-fKJRBmbgt4Zn-3" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;shadow=1;strokeWidth=1;perimeterSpacing=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Public subnet" vertex="1">
+          <mxGeometry height="210" width="217" x="443.46000000000004" y="36.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-5" parent="F3EUuus-fKJRBmbgt4Zn-3" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#996185;fillColor=#e6d0de;fontSize=14;gradientColor=#d5739d;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;CloudWatch&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="623.86" y="354.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-6" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-65" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8724.220588235294" y="675.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-7" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-8" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8102.75" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-8" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.route_53;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="8069.75" y="632" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-9" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8552.75" y="671" />
+              <mxPoint x="8552.75" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-10" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-11" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.certificate_manager_3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="8250" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-12" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-47" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8689.75" y="711.7499999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-13" parent="1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/azure_stack/User_Subscriptions.svg;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="66" width="68" x="7944.25" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-14" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-36-128.png;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="7937.75" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-15" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-16" parent="1" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Private subnet" vertex="1">
+          <mxGeometry height="460" width="389" x="8981.75" y="635.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-17" parent="F3EUuus-fKJRBmbgt4Zn-16" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="404" width="340" x="30" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-18" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="43" width="43" x="30" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-19" parent="F3EUuus-fKJRBmbgt4Zn-16" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="330" width="270" x="70" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-20" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ecs_service;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="48" width="39" x="90" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-21" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.auto_scaling2;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="139" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-22" parent="F3EUuus-fKJRBmbgt4Zn-16" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#009900;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#330000&quot;&gt;ECS Cluster&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="80" y="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-23" parent="F3EUuus-fKJRBmbgt4Zn-16" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#009900;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&lt;font style=&quot;&quot; color=&quot;#330000&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ECS Service&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="134" y="109" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-24" parent="F3EUuus-fKJRBmbgt4Zn-16" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=17;fontColor=#330000;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Django App&lt;br&gt;&amp;nbsp;Instances&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="184" y="160.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-25" parent="F3EUuus-fKJRBmbgt4Zn-16" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#330000;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Fargate Tasks&lt;br&gt;(Serverless&lt;br&gt;&amp;nbsp;Containers)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="169" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-26" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="54.19" x="115.52" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-27" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="54.19" x="115.51999999999998" y="210.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-28" parent="F3EUuus-fKJRBmbgt4Zn-16" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#D45B07;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="35" width="54.19" x="115.51999999999998" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-29" parent="F3EUuus-fKJRBmbgt4Zn-16" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;gradientDirection=south;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Autoscaling&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="109" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-30" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-31" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F34482;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="78" width="78" x="8815.75" y="846.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-32" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#009900;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Static Files&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="8894.75" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-33" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontColor=#009900;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font color=&quot;#99004d&quot;&gt;&lt;b&gt;CPU&lt;br&gt;Usage&lt;br&gt;Metrics&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="70" x="8752.75" y="856.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-34" parent="1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/networking/Private_Endpoint.svg;dashed=1;labelBackgroundColor=default;strokeWidth=2;fontColor=#99004D;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="53.25" width="58.1" x="8743.7" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-35" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-36" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.02;entryY=0.475;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8651.75" y="876" />
+              <mxPoint x="8651.75" y="982" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-36" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ecr_registry;fillColor=#F58534;gradientColor=none;labelBackgroundColor=default;strokeWidth=2;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="57" x="8532.75" y="846.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-37" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.data_pipeline;fillColor=#F58534;gradientColor=none;labelBackgroundColor=default;strokeWidth=2;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="81" width="67.5" x="8328" y="835.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-38" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-39" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.codebuild;fillColor=#759C3E;gradientColor=none;labelBackgroundColor=default;strokeWidth=2;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="80" width="70" x="8422.75" y="986.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-40" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-41" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket_with_objects;labelBackgroundColor=default;strokeWidth=2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="78" width="75" x="8201.75" y="987.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-42" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-43" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#330000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8758.75" y="711.7499999999998" as="sourcePoint" />
+            <mxPoint x="9092.75" y="818" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-44" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#330000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8758.75" y="711.7499999999998" as="sourcePoint" />
+            <mxPoint x="9092.75" y="864" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-45" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-65" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="7977.75" y="370" />
+              <mxPoint x="8549.75" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-46" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;fontSize=14;fontColor=#330000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;strokeWidth=2;shadow=0;sketch=0;strokeColor=#A3A3A3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8758.75" y="711.7499999999998" as="sourcePoint" />
+            <mxPoint x="9092.75" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-47" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_gateway;fillColor=#F58534;gradientColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="53" width="53.5" x="8452.75" y="685.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-48" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;fontSize=14;gradientColor=#ea6b66;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;AWS&lt;br&gt;&amp;nbsp;Certificate Manager&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="8212.75" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-49" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-50" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.479;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="7977.75" y="1210" />
+              <mxPoint x="8361.75" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-50" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffcd28;fontSize=14;gradientColor=#ffa500;rounded=1;glass=0;shadow=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Gitlab/Github Repo&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="7877.75" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-51" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-52" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-52" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Dev Team&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="7937.75" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-53" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Browser&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="7940" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-54" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Admin&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="7942.25" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-55" parent="1" style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=#282828;strokeColor=none;verticalAlign=top;pointerEvents=1;align=center;shape=mxgraph.cisco_safe.people_places_things_icons.icon9;rounded=1;shadow=0;glass=0;dashed=1;labelBackgroundColor=none;strokeWidth=3;fontSize=31;fontColor=#330000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="70" width="75.5" x="7944.25" y="906.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-56" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-3/24/gitlab-128.png;dashed=1;strokeWidth=2;fontSize=16;fontColor=#330000;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="70" width="70" x="7915" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-57" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-58" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-58" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=14;gradientColor=#8000FF;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Route 53&lt;br&gt;(DNS)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="8069.75" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-59" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-60" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.905;entryDx=0;entryDy=0;entryPerimeter=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-60" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b style=&quot;&quot;&gt;VPC Endpoint&lt;br&gt;(private)&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="8712.75" y="1065.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-61" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=14;gradientColor=#97d077;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;S3 Bucket&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="8194.25" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-62" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=14;gradientColor=#97d077;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Code Build&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="8406.25" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-63" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffcd28;fontSize=14;gradientColor=#ffa500;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;ECR Registry&lt;br&gt;(Docker Images)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="8504.75" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-64" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&amp;nbsp; User&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="8102.75" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-65" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;whiteSpace=wrap;labelBackgroundColor=default;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="8509.75" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-66" parent="1" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#60A337;gradientDirection=north;fillColor=#277116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="8814.75" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-67" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-65" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-66" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-68" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d6b656;fillColor=#FF9900;fontSize=14;gradientColor=#ffd966;rounded=1;gradientDirection=north;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Internet&lt;br&gt;Gateway&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="8439.5" y="738.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-69" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=14;gradientColor=#97d077;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;S3 Bucket&lt;br&gt;(private)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="8809.75" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-70" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#9933FF;fontSize=14;gradientColor=#FCFCFC;rounded=1;glass=0;gradientDirection=north;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;CloudFront&lt;br&gt;Distribution&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="8499.75" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-71" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffcd28;fontSize=14;gradientColor=#ffa500;rounded=1;gradientDirection=south;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Appliation Load&lt;br&gt;&amp;nbsp;Balancer&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="8668.71" y="751.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-72" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d6b656;fillColor=#FF9900;fontSize=14;gradientColor=#ffd966;rounded=1;gradientDirection=north;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Code Pipeline&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="8301.75" y="926.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-73" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.application_load_balancer;rounded=1;shadow=0;glass=0;labelBackgroundColor=none;strokeWidth=3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="60" width="70" x="8698.71" y="678.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-74" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-75" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-75" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-media-and-payment/64/-36-128.png;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="8069.75" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-76" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Browser&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="8069.75" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-77" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-78" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-78" parent="1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/azure_stack/User_Subscriptions.svg;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="66" width="68" x="8104.75" y="1014" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-79" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontColor=#FF0080;" value="&lt;span style=&quot;font-size: 53px;&quot;&gt;AWS CI/CD Yaşam Döngüsü&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="850" x="8367.25" y="140" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xa;  &lt;defs&gt;&lt;/defs&gt;&#xa;  &lt;g&gt;&#xa;    &lt;foreignObject width=&quot;100%&quot; height=&quot;100%&quot;&gt;&#xa;      &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xa;        &#xa;          &#xa;            &#xa;              &#xa;                &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;&#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;                &#xa;                &#xa;                &#xa;                &#xa;                  &#xa;                &#xa;&#xa;                &#xa;&#xa;              &#xa;            &#xa;          &#xa;        &#xa;      &lt;/div&gt;&#xa;    &lt;/foreignObject&gt;&#xa;  &lt;/g&gt;&#xa;&lt;/svg&gt;" id="F3EUuus-fKJRBmbgt4Zn-84">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="70" width="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-151" parent="1" style="rounded=1;html=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontSize=64;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;font&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Talep Karşılama ve Kuyruklama: Yoğun dönemlerde&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(örneğin bayram trafiği)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;sistemin&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;çökmemesi için gelen&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;binlerce isteği nasıl karşılarsınız?&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="310" width="3510" x="170" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-164" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;strokeWidth=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="F3EUuus-fKJRBmbgt4Zn-161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-152" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;fontSize=64;" value="&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Gerçek Zamanlı İletişim: Sahadaki çekicinin konumu ve durumu değiştiğinde,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;forced-color-adjust: none; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;müşteriye ve operasyon merkezine bu bilgiyi en verimli şekilde nasıl iletirsiniz?&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="3510" x="170" y="2480" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-165" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;strokeWidth=10;" target="F3EUuus-fKJRBmbgt4Zn-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-153" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;fontSize=64;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: nowrap; background-color: transparent;&quot;&gt;4. Veri Saklama ve Raporlama: Operasyonel veriler ile raporlama/analitik&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-wrap-mode: nowrap; background-color: transparent;&quot;&gt;verilerini nasıl yönetirsiniz?&lt;/span&gt;" vertex="1">
+          <mxGeometry height="270" width="3510" x="170" y="2865" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-163" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;strokeWidth=8;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" target="F3EUuus-fKJRBmbgt4Zn-160">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-154" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;fontSize=64;" value="&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Entegrasyon ve Dayanıklılık: Sigorta şirketlerinin servisleri yanıt vermediğinde&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;veya yavaşladığında sisteminizin geri kalanı (mobil uygulama, admin paneli)&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nasıl etkilenmez?&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="3510" x="180" y="2050" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-157" parent="1" style="text;overflow=hidden;rounded=0;fillColor=#dae8fc;gradientColor=none;strokeColor=#6c8ebf;html=1;fontSize=64;dashed=1;whiteSpace=wrap;align=center;" value="&lt;span id=&quot;docs-internal-guid-3aaeafa5-7fff-96b2-8fdc-780d126249e7&quot;&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height:1.38;margin-top:0pt;margin-bottom:0pt;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;font&gt;Sistem günde 10.000+ yardım talebini karşılayabilmek için stateless bir API katmanı ve arkasında queue tabanlı Kafka + Celery bir mimari tasarlardım. Tüm mobil ve web istekleri, önce bir örnek olarak AWS ‘de API Gateway/Load Balancer üzerinden Assistance API servisine yönlenir. Assistance API, yoğun dönemlerde bile bloklanmaması için uzun süren işlemleri (provider, sigorta bildirimi, bildirim gönderimi gibi) senkron yapmak yerine Celery üzerinden asenkron task olarak message broker’a (Redis/RabbitMQ) bırakır. Böylece API sadece talebi alıp hızlıca “istek kaydedildi” cevabını dönerken, arkadaki worker’lar kuyruktan mesajları tüketerek&amp;nbsp; işlemleri arka planda yürütür.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height:1.38;margin-top:0pt;margin-bottom:0pt;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;font&gt;Trafik arttığında API servisleri ve Celery worker’ları yatayda ölçeklenebiliyor ayarlarının yapılmış olması gerekir. Bu durumlarda worker sayısı artırılabilir; AWS tarafında Elastic Kubernetes Service kullanılarak yatayda scale edilebilir kaynağa sahip olunur. Mesajların sıraya alınması sayesinde sistem pik yapan yüklerde de çökmeden, kontrollü şekilde backlog biriktirip kademeli olarak işleyebiliyor. Gerekirse rate-limiting ve throttling mekanizmaları ile belirli müşteri veya entegrasyonlar için istek sınırları uygulanabilir.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="1160" width="3100" x="4440" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-159" edge="1" parent="1" source="F3EUuus-fKJRBmbgt4Zn-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.463;entryDx=0;entryDy=0;entryPerimeter=0;curved=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;strokeWidth=9;" target="F3EUuus-fKJRBmbgt4Zn-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-160" parent="1" style="text;overflow=hidden;rounded=0;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;html=1;fontSize=64;dashed=1;whiteSpace=wrap;align=center;" value="&lt;p data-start=&quot;4527&quot; data-end=&quot;4913&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: Arial, sans-serif; white-space-collapse: preserve;&quot;&gt;Sigorta şirketlerinin servislerine doğrudan API katmanından bağlanmak yerine ayrı bir mikro servis yazardım. Assistance API, sigorta bildirimini yapmak için bu servise senkron olarak bağlanmak yerine, requestini message broker’a bir iş olarak bırakır ve Celery worker’lar bu işi ara bir integration service üzerinden gerçekleştirebilir.&lt;/span&gt;&lt;/p&gt;&lt;p data-start=&quot;4527&quot; data-end=&quot;4913&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0); white-space-collapse: preserve; font-family: Arial, sans-serif; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline;&quot;&gt;Integration Service’te timeout, retry ve exponential backoff stratejileri uygularım; ayrıca circuit breaker mantığı ile belirli sayıda hatadan sonra ilgili sigorta servisinin “geçici olarak devre dışı” sayılması sağlanıyor. Böyle durumlarda müşteri tarafına yine başarıyla talebin alındığı, fakat sigorta entegrasyonunun daha sonra tamamlanacağı mesajı veriliyor. Böylece sigorta servisinin yavaşlaması veya çökmesi, mobil uygulama ve admin panelin genel kullanılabilirliğini etkilemiyor; sadece &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); white-space-collapse: preserve; font-family: Arial, sans-serif;&quot;&gt;Integration Service’te timeout, retry ve exponential backoff stratejileri uygularım; ayrıca circuit breaker mantığı ile belirli sayıda hatadan sonra ilgili sigorta servisinin “geçici olarak devre dışı” sayılması sağlanıyor. Böyle durumlarda müşteri tarafına yine başarıyla talebin alındığı, fakat sigorta entegrasyonunun daha sonra tamamlanacağı mesajı veriliyor. Böylece sigorta servisinin yavaşlaması veya çökmesi, mobil uygulama ve admin panelin genel kullanılabilirliğini etkilemiyor; sadece entegrasyon tarafında gecikme oluşuyor. Entegrasyon hataları loglanıyor ve gerekiyorsa operasyon ekibine alarm üretiliyor.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="1300" width="3140" x="4420" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-161" parent="1" style="text;overflow=hidden;rounded=0;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;html=1;fontSize=64;dashed=1;whiteSpace=wrap;align=center;" value="&lt;p dir=&quot;ltr&quot; style=&quot;line-height:1.38;margin-top:0pt;margin-bottom:0pt;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;font&gt;Sahadaki çekicinin konum ve durum bilgisinin gerçek zamanlı aktarımı için ayrı bir Realtime Gateway katmanı kullanırdım. Bunun içi WebSocket / Socket.IO / MQTT gibi protokoller iş görürler.. Provider mobil uygulamaları belirli aralıklarla (örneğin 5–10 saniye) konumlarını ve durumlarını (yolda, varmak üzere, tamamlandı vs.) bu gateway’e gönderir. Bu gateway, arkada Redis pub/sub veya Kafka gibi bir event stream katmanına yazar. Müşteri uygulaması ve operasyon paneli, ilgili AssistanceRequest ID veya provider ID’ye subscribe olarak bu stream’den gerçek zamanlı güncellemeleri alır.&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p data-start=&quot;5608&quot; data-end=&quot;6029&quot;&gt;&lt;span id=&quot;docs-internal-guid-b13b163b-7fff-4558-d246-8a6bf88b7538&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height:1.38;margin-top:0pt;margin-bottom:0pt;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;font&gt;Böylece her konum değişiminde ya da durum geçişinde (PENDING → DISPATCHED → COMPLETED) hem müşteri hem de call center ekranı otomatik güncellenirr; polling ihtiyacı ortadan kalkıyor, network ve backend yükü azalıyor. İlaveten kritik olaylar (provider iptal etti, müşteri iptal etti vb.) Notification Service üzerinden push notification / SMS ile de iletilebilir. Bunun içinde 1 Milyon isteğe kadar ücretsiz hizmet veren Google Firebase hizmeti kullanılabilir. 1 Milyon sonrasıda push notificaiton başına ücretlendirilir. Hemde authentication hizmeti sunar ve tamamen ücretsizdir.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="1270" width="3150" x="4380" y="2890" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-162" parent="1" style="text;overflow=hidden;rounded=0;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;html=1;fontSize=64;dashed=1;whiteSpace=wrap;align=center;" value="&lt;p dir=&quot;ltr&quot; style=&quot;line-height:1.38;margin-top:0pt;margin-bottom:0pt;&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;&lt;font&gt;Operasyonel ve analitik ihtiyaçları ayrıştırmak için iki katmanlı bir veri mimarisi kurgularım. Gerçek zamanlı işlem gören veriler (AssistanceRequest, Provider, ServiceAssignment vb.) için PostgreSQL üzerinde yapıyı kurmak mantıklı. Bu veritabanına sadece online operasyonel servisler (Assistance API, Provider Service) yazıyor; transaction’lar kısa tutuluyor, uygun indeksler ve veri bütünlüğü kuralları (foreign key, unique, constraint) ile yüksek tutarlılık sağlanıyor.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p data-start=&quot;6601&quot; data-end=&quot;7093&quot;&gt;&lt;b style=&quot;font-weight:normal;&quot; id=&quot;docs-internal-guid-e9f5f31f-7fff-93de-a459-d4bff115cf25&quot;&gt;&lt;font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: Arial, sans-serif; white-space-collapse: preserve;&quot;&gt;Raporlama, performans analizleri ve uzun dönemli istatistikler için bu operasyonel veriler düzenli aralıklarla (örneğin saatlik veya günlük) bir ETL süreci ile Data Warehouse ortamına (örneğin BigQuery/Redshift/ClickHouse) aktarılır.. Burada denormalize edilmiş, sorgu-optimize edilmiş tablolar tutulur. Böylece ağır rapor sorguları, dashboard’lar ve BI araçları, operasyonel PostgreSQL’i yormadan DWH üzerinden çalıştırılıyor. İstenirse event-driven bir yaklaşım ile Kafka üzerindeki olaylar da anlık olarak analitik tarafa akıtılabiliyor.&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p data-start=&quot;6601&quot; data-end=&quot;7093&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: Arial, sans-serif; white-space-collapse: preserve;&quot;&gt;Diğer bir yaklaşım ise ELK Stack yani Elasticsearch Logstash Kibana üçlüsünü kullanarak db’ ye giren her insert veya update de Celery workerlarına bir iş bırakır ve Redis Queue ile bu ara katman db’deki değişiklikleri Elasticsearch tarafında işletir günceller. Ve giren çıkan bütün datanın kaydı Logstash ile tutulur. Kibana ilede güçlü görsel grafikli dashboardlar hazırlanarak data flow izleenebilir. Bu konudaki en sık tercih edileni ise Prometheus ve Grafana ikilisidir. Prometheus logları toplarken Grafana bu logları monitorize eder.&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="1490" width="3150" x="4390" y="4360" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-169" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=14;gradientColor=#8000FF;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Route 53&lt;br&gt;(DNS)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="80" x="7810" y="1235" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-170" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Browser&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="7810" y="1580" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-171" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;&amp;nbsp; User&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="7815" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-172" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=14;gradientColor=#7ea6e0;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Admin&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="7815" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-174" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#9933FF;fontSize=14;gradientColor=#FCFCFC;rounded=1;glass=0;gradientDirection=north;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;CloudFront&lt;br&gt;Distribution&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="7800" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-175" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=14;gradientColor=#97d077;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;S3 Bucket&lt;br&gt;(private)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="7810" y="1950" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-176" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d6b656;fillColor=#FF9900;fontSize=14;gradientColor=#ffd966;rounded=1;gradientDirection=north;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Code Pipeline&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="7795" y="2230" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-177" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffcd28;fontSize=14;gradientColor=#ffa500;rounded=1;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;ECR Registry&lt;br&gt;(Docker Images)&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="8762.75" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-180" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#996185;fillColor=#e6d0de;fontSize=14;gradientColor=#d5739d;rounded=1;glass=0;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;CloudWatch&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="8777.75" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-181" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffcd28;fontSize=14;gradientColor=#ffa500;rounded=1;gradientDirection=south;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;Appliation Load&lt;br&gt;&amp;nbsp;Balancer&lt;br&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="130" x="8762.75" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-182" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=14;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;gradientColor=#b3b3b3;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#330000&quot;&gt;ECS Cluster&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="8777.75" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-183" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=14;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;gradientColor=#b3b3b3;" value="&lt;b&gt;&lt;font style=&quot;&quot; color=&quot;#330000&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ECS Service&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="8772.75" y="2270" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-184" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=17;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;gradientColor=#b3b3b3;" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Django App&lt;br&gt;&amp;nbsp;Instances&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="8777.75" y="2510" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-199" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;h1 data-start=&quot;207&quot; data-end=&quot;231&quot;&gt;&lt;strong data-start=&quot;211&quot; data-end=&quot;229&quot;&gt;Route 53 (DNS)&lt;/strong&gt;&lt;/h1&gt;&lt;br&gt;&lt;p data-start=&quot;232&quot; data-end=&quot;501&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Route 53, kullanıcıların yazdığı alan adını çözümleyerek trafiği doğru AWS bileşenine yönlendirir. Çok hızlı çalışan global bir DNS servisi olduğu için uygulamanın erişilebilirliğini artırır. Ayrıca health-check ve failover gibi gelişmiş yönlendirme özellikleri sağlar.&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1 data-start=&quot;508&quot; data-end=&quot;540&quot;&gt;&lt;strong data-start=&quot;512&quot; data-end=&quot;538&quot;&gt;Browser (User / Admin)&lt;/strong&gt;&lt;/h1&gt;&lt;br&gt;&lt;p data-start=&quot;541&quot; data-end=&quot;758&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Son kullanıcı veya admin, uygulamaya tarayıcı üzerinden erişir. İstekler her zaman AWS’deki DNS ve yük dengeleyici üzerinden geçer. Böylece kullanıcı ile backend arasındaki tüm trafik güvenli ve optimize edilmiş olur.&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1 data-start=&quot;765&quot; data-end=&quot;798&quot;&gt;&lt;strong data-start=&quot;769&quot; data-end=&quot;796&quot;&gt;CloudFront Distribution&lt;/strong&gt;&lt;/h1&gt;&lt;br&gt;&lt;p data-start=&quot;799&quot; data-end=&quot;1075&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CloudFront, statik dosyaları ve içerikleri dünya genelindeki edge lokasyonlarında cache’leyerek çok hızlı sunar. Böylece CDN üzerinden içerik dağıtımı sağlanır ve backend üzerindeki yük azalır. Performansı artırdığı için hem kullanıcı deneyimi hem de maliyet avantajı yaratır.&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1 data-start=&quot;1082&quot; data-end=&quot;1111&quot;&gt;&lt;strong data-start=&quot;1086&quot; data-end=&quot;1109&quot;&gt;S3 Bucket (Private)&lt;/strong&gt;&lt;/h1&gt;&lt;br&gt;&lt;p data-start=&quot;1112&quot; data-end=&quot;1414&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;S3, statik dosyaların, medya içeriklerinin veya build çıktılarının güvenle saklandığı obje depolama servisidir. Yüksek dayanıklılık sağlar ve CloudFront tarafından origin olarak kullanılabilir. Private olarak yapılandırıldığında yalnızca belirlenen servisler (CloudFront, IAM, VPC endpoint) erişebilir.&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1 data-start=&quot;1421&quot; data-end=&quot;1443&quot;&gt;&lt;strong data-start=&quot;1425&quot; data-end=&quot;1441&quot;&gt;CodePipeline&lt;/strong&gt;&lt;/h1&gt;&lt;br&gt;&lt;p data-start=&quot;1444&quot; data-end=&quot;1667&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;CodePipeline, kod değişikliklerinden deploy aşamasına kadar tüm CI/CD sürecini otomatikleştirir. Build, test ve dağıtım aşamalarını sırayla çalıştırır. Böylece manuel müdahale olmadan hızlı ve güvenli deploy akışı sağlanır.&lt;/font&gt;&lt;/p&gt;&lt;br&gt;&lt;h1 data-start=&quot;1674&quot; data-end=&quot;1712&quot;&gt;&lt;br&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="1455" width="560" x="8012.75" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-200" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;h1 data-start=&quot;1674&quot; data-end=&quot;1712&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;1678&quot; data-end=&quot;1710&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ECR Registry (Docker Images)&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;1713&quot; data-end=&quot;1962&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ECR, uygulamanın Docker imajlarını saklayan AWS container registry servisidir. ECS çalıştıracağı container’ları buradan çeker, böylece versiyon yönetimi standart bir şekilde ilerler. Güvenli, hızlı ve AWS’nin diğer servisleriyle tam entegre çalışır.&lt;/font&gt;&lt;/p&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;br&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(236, 236, 236);&quot;&gt;&lt;/span&gt;&lt;h1 data-start=&quot;1969&quot; data-end=&quot;1989&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;1973&quot; data-end=&quot;1987&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;CloudWatch&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(236, 236, 236);&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;1990&quot; data-end=&quot;2246&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;CloudWatch, sistem performansını, logları ve metrikleri toplayarak uygulamayı izlenebilir hale getirir. CPU/RAM gibi metrikler autoscaling mantığını tetiklemek için kullanılır. Ayrıca hataları, uyarıları ve özel metrikleri takip ederek alarm oluşturabilir.&lt;/font&gt;&lt;/p&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;br&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;h1 data-start=&quot;2253&quot; data-end=&quot;2294&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;2257&quot; data-end=&quot;2292&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Application Load Balancer (ALB)&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(236, 236, 236);&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;2295&quot; data-end=&quot;2525&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ALB, gelen HTTP/HTTPS isteklerini çalışan container’lar arasında akıllı şekilde dağıtır. Health check yaparak sağlıksız container’lara trafik göndermeyi engeller. Yük arttığında ölçeklenen ECS task’larını otomatik olarak dengeler.&lt;/font&gt;&lt;/p&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;br&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;h1 data-start=&quot;2532&quot; data-end=&quot;2553&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;2536&quot; data-end=&quot;2551&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ECS Cluster&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;2554&quot; data-end=&quot;2779&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ECS Cluster, uygulamanın container bazlı olarak çalıştığı altyapıdır. Tüm EC2 veya Fargate tabanlı container’lar bu cluster içinde yönetilir. Deployment, ölçeklendirme ve health-check işlemleri ECS üzerinden gerçekleştirilir.&lt;/font&gt;&lt;/p&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;h1 data-start=&quot;2786&quot; data-end=&quot;2807&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;2790&quot; data-end=&quot;2805&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;ECS Service&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;2808&quot; data-end=&quot;3049&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;ECS Service belirli bir sayıda container’ın her zaman çalışmasını garanti eder. Yeni versiyon deploy edildiğinde sıfır kesinti (rolling update) ile güncellemeyi yönetir. Ayrıca ALB ile entegre olup container’ların lifecycle’ını kontrol eder.&lt;/font&gt;&lt;/p&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;h1 data-start=&quot;3056&quot; data-end=&quot;3086&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;strong data-start=&quot;3060&quot; data-end=&quot;3084&quot; style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Django App Instances&lt;/strong&gt;&lt;/h1&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;/span&gt;&lt;p data-start=&quot;3087&quot; data-end=&quot;3339&quot; style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;Bu katman, backend uygulamasının container içinde çalışan gerçek instance’larını temsil eder. ALB gelen istekleri bu container’lara yönlendirir ve servis sunumu buradan yapılır. Autoscaling arttığında yeni Django container’ları otomatik olarak eklenir.&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="1090" width="560" x="8930" y="1255" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-250" connectable="0" parent="1" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="1270" width="1220" x="9950" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-206" parent="F3EUuus-fKJRBmbgt4Zn-250" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="1270" width="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-207" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;direction=east;flipV=0;flipH=0;fontStyle=1;fontSize=14;fontColor=light-dark(#FF8000,#FF70FF);movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Client Katmanı" vertex="1">
+          <mxGeometry height="20" width="110" x="80" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-208" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;direction=east;flipV=0;flipH=0;gradientColor=#7ea6e0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Mobil Uygulama&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;iOS / Android&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="220" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-209" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;direction=east;flipV=0;flipH=0;gradientColor=#7ea6e0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Web Uygulaması&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;React / SPA&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="430" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-210" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;direction=east;flipV=0;flipH=0;gradientColor=#7ea6e0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Çağrı Merkezi Paneli&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Operatör UI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="640" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-211" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;direction=east;flipV=0;flipH=0;fontStyle=1;fontSize=14;fontColor=light-dark(#FF8000,#FF70FF);movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Giriş Katmanı &lt;br&gt;(API Gateway / Load Balancer)" vertex="1">
+          <mxGeometry height="20" width="280" x="150" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-212" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;direction=east;flipV=0;flipH=0;gradientColor=#ffd966;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="API Gateway / Load Balancer&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Rate Limit · Auth · Routing · Logging&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="300" x="380" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-213" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;direction=east;flipV=0;flipH=0;fontStyle=1;fontSize=14;fontColor=light-dark(#FF8000,#FF70FF);movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Uygulama Servisleri" vertex="1">
+          <mxGeometry height="20" width="140" x="140" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-214" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e6d0de;strokeColor=#996185;direction=east;flipV=0;flipH=0;gradientColor=#d5739d;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Assistance Service&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Yardım talebi oluşturma&lt;br&gt;• Provider atama mantığı&lt;br&gt;• Talep durumu (PENDING →...)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="220" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-215" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e6d0de;strokeColor=#996185;direction=east;flipV=0;flipH=0;gradientColor=#d5739d;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Provider Service&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Çekiciler / hizmet sağlayıcılar&lt;br&gt;• Konum güncelleme&lt;br&gt;• Müsaitlik (is_available)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="450" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-216" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e6d0de;strokeColor=#996185;direction=east;flipV=0;flipH=0;gradientColor=#d5739d;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Auth Kullanıcı Servisi&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• JWT / OAuth&lt;br&gt;• Müşteri poliçe doğrulama&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="680" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-217" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e6d0de;strokeColor=#996185;direction=east;flipV=0;flipH=0;gradientColor=#d5739d;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Notification Service&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Push / SMS / E-posta&lt;br&gt;• Anlık bilgilendirme&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="910" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-218" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;direction=east;flipV=0;flipH=0;fontStyle=1;fontSize=14;fontColor=light-dark(#FF8000,#FF70FF);movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Mesajlaşma Asenkron İşleme" vertex="1">
+          <mxGeometry height="20" width="190" x="140" y="758.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-219" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;direction=east;flipV=0;flipH=0;gradientColor=#97d077;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Mesaj Kuyruğu / Broker&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• RabbitMQ / Kafka&lt;br&gt;• Trafik piklerinde buffer görevi&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="220" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-220" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;direction=east;flipV=0;flipH=0;gradientColor=#97d077;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Celery Workers&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Sigorta bildirimi task&#39;leri&lt;br&gt;• Retry + Exponential Backoff&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="450" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-221" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;direction=east;flipV=0;flipH=0;gradientColor=#97d077;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Realtime Gateway&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• WebSocket / SSE&lt;br&gt;• Çekici konumu - canlı durum&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="680" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-222" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;direction=east;flipV=0;flipH=0;gradientColor=#97d077;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Sigorta Entegrasyonları&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Dış REST API&#39;ler&lt;br&gt;• Timeout / Retry / Circuit Breaker&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="910" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-223" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;direction=east;flipV=0;flipH=0;fontStyle=1;fontSize=14;fontColor=light-dark(#FF8000,#FF70FF);movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Veri Saklama Analitik" vertex="1">
+          <mxGeometry height="20" width="170" x="80" y="918.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-224" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffcd28;strokeColor=#d79b00;direction=east;flipV=0;flipH=0;gradientColor=#ffa500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Operasyonel DB (OLTP)&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• PostgreSQL / MySQL&lt;br&gt;• Online işlemler (CRUD)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="220" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-225" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffcd28;strokeColor=#d79b00;direction=east;flipV=0;flipH=0;gradientColor=#ffa500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Cache (Redis)&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• Provider konumu cache&lt;br&gt;• Sık sorulan okuma istekleri&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="450" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-226" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffcd28;strokeColor=#d79b00;direction=east;flipV=0;flipH=0;gradientColor=#ffa500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Analitik / DWH&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• BigQuery / Redshift / ClickHouse&lt;br&gt;• Raporlama KPI SLA&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="680" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-227" parent="F3EUuus-fKJRBmbgt4Zn-250" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffcd28;strokeColor=#d79b00;direction=east;flipV=0;flipH=0;gradientColor=#ffa500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Log Monitoring&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;• ELK / Loki · Prometheus · Grafana&lt;br&gt;• Alarm dashboard&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="200" x="910" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-228" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-208" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-212" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="290" y="410" as="sourcePoint" />
+            <mxPoint x="290" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-229" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-209" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-212" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="500" y="410" as="sourcePoint" />
+            <mxPoint x="500" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-230" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-210" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-212" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="652.8571428571431" y="450" />
+              <mxPoint x="572.8571428571431" y="450" />
+            </Array>
+            <mxPoint x="652.8571428571431" y="410" as="sourcePoint" />
+            <mxPoint x="652.8571428571431" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-231" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-212" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-214" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="487.1428571428569" y="580" />
+              <mxPoint x="377.1428571428569" y="580" />
+            </Array>
+            <mxPoint x="487.1428571428569" y="540" as="sourcePoint" />
+            <mxPoint x="377.1428571428569" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-232" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-212" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-215" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="580" />
+              <mxPoint x="550" y="580" />
+            </Array>
+            <mxPoint x="500" y="540" as="sourcePoint" />
+            <mxPoint x="550" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-233" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-212" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-216" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="547.1428571428569" y="585.6441717791413" />
+              <mxPoint x="757.1428571428569" y="585.6441717791413" />
+            </Array>
+            <mxPoint x="547.1428571428569" y="545.6441717791413" as="sourcePoint" />
+            <mxPoint x="757.1428571428569" y="625.6441717791413" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-234" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-212" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-217" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="573.3333333333321" y="581.679389312977" />
+              <mxPoint x="760" y="570" />
+              <mxPoint x="923.3333333333321" y="601.679389312977" />
+            </Array>
+            <mxPoint x="553.3333333333321" y="561.679389312977" as="sourcePoint" />
+            <mxPoint x="923.3333333333321" y="641.679389312977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-235" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-214" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-219" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="720" as="sourcePoint" />
+            <mxPoint x="320" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-236" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-214" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-220" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="753.0434782608695" />
+              <mxPoint x="550" y="753.0434782608695" />
+            </Array>
+            <mxPoint x="320" y="723.0434782608695" as="sourcePoint" />
+            <mxPoint x="550" y="803.0434782608695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-237" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-215" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-220" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="720" as="sourcePoint" />
+            <mxPoint x="550" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-238" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-215" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-221" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="753.0434782608695" />
+              <mxPoint x="780" y="753.0434782608695" />
+            </Array>
+            <mxPoint x="550" y="723.0434782608695" as="sourcePoint" />
+            <mxPoint x="780" y="803.0434782608695" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-239" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-216" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-221" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="780" y="700" as="sourcePoint" />
+            <mxPoint x="780" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-240" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-217" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-222" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1010" y="700" as="sourcePoint" />
+            <mxPoint x="1010" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-241" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-219" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-224" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="880" as="sourcePoint" />
+            <mxPoint x="320" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-242" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-220" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-225" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="550" y="880" as="sourcePoint" />
+            <mxPoint x="550" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-243" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-221" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-226" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="780" y="880" as="sourcePoint" />
+            <mxPoint x="780" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-244" parent="F3EUuus-fKJRBmbgt4Zn-250" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="110" width="820" x="100" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-245" edge="1" parent="F3EUuus-fKJRBmbgt4Zn-250" source="F3EUuus-fKJRBmbgt4Zn-222" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=1;curved=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="F3EUuus-fKJRBmbgt4Zn-227" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1010" y="880" as="sourcePoint" />
+            <mxPoint x="1010" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-246" parent="F3EUuus-fKJRBmbgt4Zn-250" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="122.5" width="990" x="170" y="607.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-247" parent="F3EUuus-fKJRBmbgt4Zn-250" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="122.5" width="990" x="180" y="778.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-248" parent="F3EUuus-fKJRBmbgt4Zn-250" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="122.5" width="990" x="170" y="938.75" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-249" parent="F3EUuus-fKJRBmbgt4Zn-250" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontColor=#FF0080;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 53px;&quot;&gt;API Ve Servis Mimarisi&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="850" x="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="F3EUuus-fKJRBmbgt4Zn-251" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontColor=#1C23FF;fontSize=43;" value="&lt;span&gt;&lt;font style=&quot;font-size: 103px;&quot;&gt;DESTECH CHALLANGE CASE&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="330" width="1850" x="280" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
