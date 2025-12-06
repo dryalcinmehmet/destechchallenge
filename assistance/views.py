@@ -4,12 +4,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from assistance.models import AssistanceRequest, Provider, ServiceAssignment
-from assistance.serializers import (
-    AssistanceRequestCreateSerializer,
-    AssistanceRequestSerializer,
-    ProviderCreateSerializer,
-    ProviderSerializer,
-)
+from assistance.serializers import (AssistanceRequestCreateSerializer,
+                                    AssistanceRequestSerializer,
+                                    ProviderCreateSerializer,
+                                    ProviderSerializer)
 
 from .services import AssistanceService
 
