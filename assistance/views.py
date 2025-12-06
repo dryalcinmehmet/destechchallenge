@@ -4,8 +4,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from assistance.models import AssistanceRequest, Provider, ServiceAssignment
-from assistance.serializers import (ProviderCreateSerializer,
-                                     ProviderSerializer)
+from assistance.serializers import (AssistanceRequestCreateSerializer,
+                                    AssistanceRequestSerializer,
+                                    ProviderCreateSerializer,
+                                    ProviderSerializer)
 
 from .services import AssistanceService
 
@@ -62,41 +64,24 @@ class AssistanceRequestListView(APIView):
 
 
 class AssistanceRequestCreateView(APIView):
-
     @extend_schema(
-        summary="Yeni assistance request oluştur",
-        description=(
-            "Yeni bir assistance talebi oluşturur ve uygun provider'ı otomatik olarak atar."
-        ),
-        request={
-            "application/json": {
-                "customer_name": "Mehmet",
-                "policy_number": "PL123456",
-                "lat": 41.01,
-                "lon": 29.02,
-                "issue_desc": "Araç arızalandı",
-            }
-        },
-        responses={
-            201: dict,
-            400: dict,
-        },
+        summary="Assistance request oluştur",
+        request=AssistanceRequestCreateSerializer,
+        responses={201: AssistanceRequestSerializer},
     )
     def post(self, request):
-        data = request.data
-        try:
-            assistance_req = AssistanceService.create_request(data)
-            AssistanceService.assign_provider_atomic(assistance_req.id)
+        serializer = AssistanceRequestCreateSerializer(data=request.data)
 
-            return Response(
-                {
-                    "status": "Created",
-                    "id": assistance_req.id,
-                },
-                status=status.HTTP_201_CREATED,
-            )
-        except Exception as e:
-            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=400)
+
+        assistance_req = AssistanceService.create_request(serializer.validated_data)
+        AssistanceService.assign_provider_atomic(assistance_req.id)
+
+        return Response(
+            AssistanceRequestSerializer(assistance_req).data,
+            status=status.HTTP_201_CREATED,
+        )
 
 
 class AssistanceRequestCompleteView(APIView):
