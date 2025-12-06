@@ -1,8 +1,13 @@
 from django.urls import path
 
-from .views import (AssistanceRequestCancelView, AssistanceRequestCompleteView,
-                    AssistanceRequestCreateView, AssistanceRequestListView,
-                    ProviderCreateView, ProviderListView)
+from .views import (
+    AssistanceRequestCancelView,
+    AssistanceRequestCompleteView,
+    AssistanceRequestCreateView,
+    AssistanceRequestListView,
+    ProviderCreateView,
+    ProviderListView,
+)
 
 urlpatterns = [
     path("provider/create/", ProviderCreateView.as_view(), name="provider_create"),
