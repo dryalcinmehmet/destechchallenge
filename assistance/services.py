@@ -18,6 +18,7 @@ class AssistanceService:
         Sistem üzerindeki tüm müsait (is_available=True) provider'lar arasından
         kullanıcının bulunduğu konuma en yakın olan provider'ı döndürür.
         """
+
         providers = Provider.objects.filter(is_available=True)
 
         # Provider mevcutmu kontrolü yapılır.

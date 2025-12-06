@@ -65,11 +65,10 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-  
 
   redis:
     restart: unless-stopped
-    image: redis:7.0.5-alpine 
+    image: redis:7.0.5-alpine
     networks:
       - common_network
     ports:
@@ -79,8 +78,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    entrypoint: [] 
-
+    entrypoint: []
     command: >
       celery -A config flower
       --broker=redis://redis:6379/0
@@ -95,6 +93,70 @@ services:
       - ./.env.dev
     networks:
       - common_network
+
+  
+  celery_exporter:
+    image: danihodovic/celery-exporter
+    command:
+      - --broker-url=redis://redis:6379/0
+      - --port=9808
+    ports:
+      - "9808:9808"
+    depends_on:
+      - redis
+      - celery
+    networks:
+      - common_network
+  redis_exporter:
+    image: oliver006/redis_exporter
+    command: --redis.addr=redis://redis:6379
+    ports:
+      - "9121:9121"
+    depends_on:
+      - redis
+    networks:
+      - common_network
+
+  postgres_exporter:
+    image: prometheuscommunity/postgres-exporter
+    environment:
+      DATA_SOURCE_NAME: "postgresql://postgres:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}?sslmode=disable"
+    ports:
+      - "9187:9187"
+    depends_on:
+      - db
+    networks:
+      - common_network
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - web
+      - celery_exporter
+      - redis_exporter
+      - postgres_exporter
+    networks:
+      - common_network
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    volumes:
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - common_network
+
 
 volumes:
   postgres_data_staging:
