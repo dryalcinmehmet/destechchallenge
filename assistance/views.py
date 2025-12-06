@@ -4,53 +4,31 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from assistance.models import AssistanceRequest, Provider, ServiceAssignment
+from assistance.serializers import (ProviderCreateSerializer,
+                                     ProviderSerializer)
 
 from .services import AssistanceService
 
 
 class ProviderCreateView(APIView):
-    """
-    Yeni bir provider eklemek için kullanılcak POST endpoint.
-    """
-
     @extend_schema(
         summary="Provider oluştur",
-        description="Sisteme yeni bir provider ekler.",
-        request={
-            "application/json": {
-                "name": "Ahmet",
-                "phone": "5554443322",
-                "lat": 41.01,
-                "lon": 29.02,
-            }
-        },
-        responses={
-            201: dict,
-            400: dict,
-        },
+        request=ProviderCreateSerializer,
+        responses={201: ProviderSerializer},
     )
     def post(self, request):
-        data = request.data
+        serializer = ProviderCreateSerializer(data=request.data)
 
-        try:
-            provider = Provider.objects.create(
-                name=data.get("name"),
-                phone=data.get("phone"),
-                lat=data.get("lat"),
-                lon=data.get("lon"),
-                is_available=True,
-            )
+        if not serializer.is_valid():
+            return Response(serializer.errors, status=400)
 
-            return Response(
-                {
-                    "status": "Provider created",
-                    "id": provider.id,
-                },
-                status=status.HTTP_201_CREATED,
-            )
+        # Burada object create e ihtiyaç duyulmaz serializer save() methodu bunu handle eder.
+        provider = serializer.save(is_available=True)
 
-        except Exception as e:
-            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        return Response(
+            ProviderSerializer(provider).data,
+            status=status.HTTP_201_CREATED,
+        )
 
 
 class ProviderListView(APIView):
